@@ -1,91 +1,96 @@
+/* Fonte, espaçamento e fundo */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #f8f9fa;
 }
 
-header {
-    background: #492E87;
-    color: white;
-    padding: 20px 0;
+/* Header e Navbar personalizados */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+.navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffd54f !important;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Main Section */
+#secao1 {
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.05);
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+#secao1 .btn-primary {
+  font-weight: 600;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
 }
 
-header .btn {
-    margin: 10px 5px 0 5px;
+#secao1 .btn-primary:hover {
+  background-color: #5c3ed7;
 }
 
-section {
-    padding: 40px 20px;
-    margin: 0;
-    text-align: center;
+/* Cards */
+.card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
-#secao1,
-#secao2,
-#secao3,
-#secao4 {
-    background: #B9E5E8;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
 }
 
-section img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+.card .card-link.btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
 }
 
-form {
-    max-width: 500px;
-    margin: 30px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+.card .card-link.btn-outline-primary:hover {
+  background-color: #7f5af0;
+  color: white !important;
 }
 
-form .form-label {
-    font-weight: bold;
+/* Carousel */
+.carousel-inner img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
-form .btn {
-    width: 100%;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  background-size: 50%, 50%;
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #492E87;
-    color: white;
+  background-color: #492e87;
+  color: white;
 }
 
 footer .social-icons i {
-    margin: 0 10px;
-    cursor: pointer;
-    color: white;
+  margin: 0 12px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+  font-size: 1.8rem;
 }
 
 footer .social-icons i:hover {
-    color: #B9E5E8;
+  color: #b9e5e8;
 }
